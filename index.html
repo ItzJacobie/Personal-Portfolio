@@ -1,55 +1,102 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Resume Site</title>
-        <link rel="stylesheet" href="intro-to-html/styles/youtube.css">
-    </head>
-    <body>
-        <!--can use checkbox as well for a checkbox-->
-        <input class="search-bar" type="textbox" placeholder="Search">
-
-        <!--The div creates a container around the content inside-->
-        <div class="video-preview">
-            <img class="thumbnail" src="thumbnails/marques.webp">
-
-        <!--block elements take up whole line in their container (paragraphs), inline-block elements take up only 
-            space needed (images and input), inline elements appear within a line of text (span,
-            strong, etc.)-->
-
-        <p class="video-title">
-            Talking Tech and AI with Google CEO Sundar Pichai!
-        </p>
-        <p class="video-author">
-            Marques Brownlee
-        </p>
-        <p class="video-stats">
-            3.4M views &#183; 6 months ago
-        </p>
-
-        </div>
-
-        <div class="video-preview">
-            <img class="thumbnail" src="thumbnails/markimoo.webp">
-
-        <!--block elements take up whole line in their container (paragraphs), inline-block elements take up only 
-            space needed (images and input), inline elements appear within a line of text (span,
-            strong, etc.)-->
-
-        <p class="video-title">
-            Try Not To Laugh Challenge &#35;9
-        </p>
-        <p class="video-author">
-            Markiplier
-        </p>
-        <p class="video-stats">
-            19M views &#183; 4 years ago
-        </p>
-
-        </div>
-
-        <div class="practice">
-            <p class="tit">Install YouTube Music</p>
-            <p class="sub">Add YouTube Music to your desktop for quick and easy access</p>
-        </div>
-    </body>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jacob Adams | Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="header">
+<div class="container header__inner">
+<a href="#home" class="logo">Jacob Adams</a>
+<nav class="nav">
+<a href="#about">About</a>
+<a href="#projects">Projects</a>
+<a href="#skills">Skills</a>
+<a href="#contact">Contact</a>
+</nav>
+</div>
+</header>
+<main>
+<section id="home" class="hero">
+<div class="container">
+<h1>Hi, I'm Jacob<br><span class="accent">Software Engineer</span></h1>
+<p class="subtitle">Building elegant solutions with code.</p>
+<a href="#projects" class="btn">See My Work</a>
+</div>
+</section>
+<section id="about" class="section">
+<div class="container">
+<h2>About Me</h2>
+<p>I recently graduated with a B.S. in Computer Science from the University of Central Florida. I'm passionate about full‑stack development, XR, and crafting user‑centric experiences.</p>
+</div>
+</section>
+<section id="projects" class="section bg-light">
+<div class="container">
+<h2>Projects</h2>
+<div class="projects-grid">
+<article class="card">
+<h3>E‑commerce Platform</h3>
+<p>MERN‑stack store with Stripe integration and administration dashboard.</p>
+<a href="https://github.com/username/ecommerce" target="_blank" class="link">GitHub</a>
+</article>
+<article class="card">
+<h3>VR Glovebox Simulator</h3>
+<p>Unity mixed‑reality training tool using HaptX gloves and Apple Vision Pro.</p>
+<a href="https://github.com/username/vr-glovebox" target="_blank" class="link">GitHub</a>
+</article>
+<article class="card">
+<h3>Strands Word Game</h3>
+<p>Flutter mobile game that challenges players to discover words in a grid.</p>
+<a href="https://github.com/username/strands-game" target="_blank" class="link">GitHub</a>
+</article>
+</div>
+</div>
+</section>
+<section id="skills" class="section">
+<div class="container">
+<h2>Skills</h2>
+<ul class="skills-list">
+<li>JavaScript / TypeScript</li>
+<li>React / Node.js</li>
+<li>Python</li>
+<li>Java</li>
+<li>C++</li>
+<li>Unity / C#</li>
+<li>Flutter / Dart</li>
+<li>AWS & Docker</li>
+</ul>
+</div>
+</section>
+<section id="contact" class="section bg-light">
+<div class="container">
+<h2>Contact</h2>
+<form action="https://formspree.io/f/your-id" method="POST" class="contact-form">
+<div class="form-row">
+<label for="name">Name</label>
+<input type="text" id="name" name="name" required>
+</div>
+<div class="form-row">
+<label for="email">Email</label>
+<input type="email" id="email" name="_replyto" required>
+</div>
+<div class="form-row">
+<label for="message">Message</label>
+<textarea id="message" name="message" rows="5" required></textarea>
+</div>
+<button type="submit" class="btn">Send Message</button>
+</form>
+</div>
+</section>
+</main>
+<footer class="footer">
+<div class="container footer__inner">
+<p>&copy; 2025 Jacob Adams. All rights reserved.</p>
+</div>
+</footer>
+</body>
 </html>
