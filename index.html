@@ -9,96 +9,255 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 <header class="header">
-<div class="container header__inner">
-<a href="#home" class="logo">Jacob Adams</a>
-<nav class="nav">
-<a href="#about">About</a>
-<a href="#projects">Projects</a>
-<a href="#skills">Skills</a>
-<a href="#contact">Contact</a>
-</nav>
-</div>
+  <div class="container header__inner">
+    <a href="#home" class="logo">Jacob Adams</a>
+    <nav class="nav">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#honors">Honors</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
 </header>
+
 <main>
-<section id="home" class="hero">
-<div class="container">
-<h1>Hi, I'm Jacob<br><span class="accent">Software Engineer</span></h1>
-<p class="subtitle">Building elegant solutions with code.</p>
-<a href="#projects" class="btn">See My Work</a>
-</div>
-</section>
-<section id="about" class="section">
-<div class="container">
-<h2>About Me</h2>
-<p>I recently graduated with a B.S. in Computer Science from the University of Central Florida. I'm passionate about full‑stack development, XR, and crafting user‑centric experiences.</p>
-</div>
-</section>
-<section id="projects" class="section bg-light">
-<div class="container">
-<h2>Projects</h2>
-<div class="projects-grid">
-<article class="card">
-<h3>Average At Best Mobile App</h3>
-<p>MERN‑stack store for a clothing brand (Average at Best) with Stripe integration and full CRUD operations.</p>
-<a href="https://github.com/noahf909/FlutterAAB" target="_blank" class="link">GitHub</a>
-</article>
-<article class="card">
-<h3>XR Glovebox Simulator</h3>
-<p>Unity mixed‑reality training tool for simulating a real glove box using HaptX gloves and Apple Vision Pro.</p>
-<a href="https://github.com/BalanceJF/xrglovebox" target="_blank" class="link">GitHub</a>
-</article>
-<article class="card">
-<h3>Re_Word App</h3>
-<p>Flutter mobile game that challenges players to discover all words within a grid under a time limit with an ingame currency and shop buyables.</p>
-<a href="https://github.com/ItzJacobie/Re-Word-App" target="_blank" class="link">GitHub</a>
-</article>
-</div>
-</div>
-</section>
-<section id="skills" class="section">
-<div class="container">
-<h2>Skills</h2>
-<ul class="skills-list">
-<li>JavaScript / TypeScript</li>
-<li>React / Node.js</li>
-<li>Python</li>
-<li>Java</li>
-<li>C / C++</li>
-<li>Unity / C#</li>
-<li>Flutter / Dart</li>
-<li>AWS & Docker</li>
-<li>MERN Stack</li>
-<li>LAMP Stack</li>
-</ul>
-</div>
-</section>
-<section id="contact" class="section bg-light">
-<div class="container">
-<h2>Contact</h2>
-<form action="https://formspree.io/f/your-id" method="POST" class="contact-form">
-<div class="form-row">
-<label for="name">Name</label>
-<input type="text" id="name" name="name" required>
-</div>
-<div class="form-row">
-<label for="email">Email</label>
-<input type="email" id="email" name="_replyto" required>
-</div>
-<div class="form-row">
-<label for="message">Message</label>
-<textarea id="message" name="message" rows="5" required></textarea>
-</div>
-<button type="submit" class="btn">Send Message</button>
-</form>
-</div>
-</section>
+  <section id="home" class="hero">
+    <div class="container">
+      <h1>Hi, I'm Jacob<br><span class="accent">Software Engineer</span></h1>
+      <p class="subtitle">Building elegant solutions with code.</p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn">See My Work</a>
+        <a href="#contact" class="btn btn--ghost">Get In Touch</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>
+        I recently graduated with a B.S. in Computer Science from the University of Central Florida and I’m currently pursuing
+        an M.S. in Cyber Security & Privacy. I’m passionate about full-stack development, XR, and crafting user-centric experiences.
+      </p>
+
+      <div class="quick-links">
+        <a class="pill" href="mailto:jacobka1219@gmail.com">jacobka1219@gmail.com</a>
+        <a class="pill" href="https://github.com/ItzJacobie" target="_blank" rel="noopener">GitHub</a>
+        <a class="pill" href="https://linkedin.com/in/jacobka1219" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="section bg-light">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <article class="card">
+          <h3>Average At Best Mobile App</h3>
+          <p>MERN-stack store for a clothing brand (Average at Best) with Stripe integration and full CRUD operations.</p>
+          <a href="https://github.com/noahf909/FlutterAAB" target="_blank" class="link" rel="noopener">GitHub</a>
+        </article>
+
+        <article class="card">
+          <h3>XR Glovebox Simulator</h3>
+          <p>Unity mixed-reality training tool for simulating a real glove box using HaptX gloves and Apple Vision Pro.</p>
+          <a href="https://github.com/BalanceJF/xrglovebox" target="_blank" class="link" rel="noopener">GitHub</a>
+        </article>
+
+        <article class="card">
+          <h3>Re_Word App</h3>
+          <p>Flutter mobile game where players find words in a grid under a time limit, with in-game currency and shop buyables.</p>
+          <a href="https://github.com/ItzJacobie/Re-Word-App" target="_blank" class="link" rel="noopener">GitHub</a>
+        </article>
+
+        <article class="card">
+          <h3>PhishGuard — URL Phishing Detector</h3>
+          <p>
+            AI/ML system that classifies URLs as phishing vs. benign using engineered lexical features, a calibrated Random Forest,
+            and a Streamlit web app + CLI for real-time scoring.
+          </p>
+          <ul class="mini-list">
+            <li>Pipeline with evaluation metrics (ROC-AUC/F1/Accuracy) + confusion matrix</li>
+            <li>Threshold tuning to reduce false positives; artifacts persisted with joblib</li>
+            <li>Packaged with Docker for reproducible runs</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience" class="section">
+    <div class="container">
+      <h2>Experience</h2>
+
+      <div class="timeline">
+        <article class="item">
+          <div class="item__head">
+            <h3>Department of Energy (Quickstart) — Intern</h3>
+            <span class="meta">Orlando, FL · Dec 2024 – Jan 2025</span>
+          </div>
+          <ul>
+            <li>Conducted DOE-funded research on VR training for nuclear power plants and published findings on benefits/limitations and improvements.</li>
+            <li>Authored a research paper analyzing future improvements for VR training simulations (e.g., haptic implementation).</li>
+            <li>Developed recommendations to reduce training costs, improve safety, and enhance VR user experience.</li>
+          </ul>
+        </article>
+
+        <article class="item">
+          <div class="item__head">
+            <h3>Apex Service Partners — Marketing Coordinator</h3>
+            <span class="meta">Orlando, FL · May 2024 – Aug 2024</span>
+          </div>
+          <ul>
+            <li>Assisted in deploying Google Gemini to generate targeted ads, improving campaign effectiveness and reach.</li>
+            <li>Compiled a playbook with insights from experienced employees to support new marketing team members.</li>
+            <li>Developed and presented competitive analysis reports to identify optimal marketing strategies.</li>
+          </ul>
+        </article>
+
+        <article class="item">
+          <div class="item__head">
+            <h3>PowerIT — Network Engineer Intern</h3>
+            <span class="meta">Fort Lauderdale (Remote), FL · May 2023 – Sept 2023</span>
+          </div>
+          <ul>
+            <li>Configured and maintained routers, switches, and firewalls for reliable LAN/WAN connectivity and secure network operations.</li>
+            <li>Monitored network performance using Wireshark and NetFlow; diagnosed latency issues and reduced downtime.</li>
+            <li>Assisted with IP addressing schemes, VLAN configs, and network documentation for troubleshooting and scalability.</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="education" class="section bg-light">
+    <div class="container">
+      <h2>Education</h2>
+
+      <div class="timeline">
+        <article class="item">
+          <div class="item__head">
+            <h3>University of Central Florida — M.S. Cyber Security & Privacy</h3>
+            <span class="meta">Orlando, FL · Expected 2025 – 2027</span>
+          </div>
+        </article>
+
+        <article class="item">
+          <div class="item__head">
+            <h3>University of Central Florida — B.S. Computer Science</h3>
+            <span class="meta">Orlando, FL · Aug 2021 – May 2025 · GPA: 3.54</span>
+          </div>
+        </article>
+      </div>
+
+      <div class="split">
+        <div class="panel">
+          <h3 class="panel__title">Affiliations</h3>
+          <ul class="clean">
+            <li>Hack@UCF</li>
+            <li>Knightsec Club Member (Aug 2024 – Present)</li>
+          </ul>
+        </div>
+
+        <div class="panel">
+          <h3 class="panel__title">Certifications / Extra</h3>
+          <ul class="clean">
+            <li>Python for Data Science, AI & Development (IBM)</li>
+            <li>AWS certified</li>
+            <li>Agile and Scrum trained</li>
+            <li>LSS trained</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="section">
+    <div class="container">
+      <h2>Skills</h2>
+
+      <h3 class="subhead">Languages & Frameworks</h3>
+      <ul class="skills-list">
+        <li>Java</li><li>Python</li><li>C</li><li>C++</li><li>C#</li>
+        <li>JavaScript</li><li>TypeScript</li><li>Node.js</li><li>React</li>
+        <li>HTML/CSS</li><li>Express</li><li>Flutter</li><li>Dart</li>
+        <li>MySQL</li><li>MongoDB</li><li>PHP</li><li>Apache</li>
+      </ul>
+
+      <h3 class="subhead">Developer Tools</h3>
+      <ul class="skills-list">
+        <li>Git & GitHub</li><li>AWS</li><li>Google Cloud</li><li>Docker</li><li>Kubernetes</li>
+        <li>VS Code</li><li>Visual Studio</li><li>PyCharm</li><li>IntelliJ</li><li>Eclipse</li><li>CLion</li><li>BlueJ</li>
+        <li>PyTorch</li><li>Power BI</li><li>Tableau</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="honors" class="section bg-light">
+    <div class="container">
+      <h2>Honors & Awards</h2>
+      <div class="card">
+        <ul class="clean">
+          <li>Senior Design Showcase Finalist</li>
+          <li>President’s List (4x)</li>
+          <li>Dean’s List (3x)</li>
+          <li>Foundation Exam Pass</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <div class="container">
+      <h2>Contact</h2>
+
+      <div class="contact-split">
+        <div class="card">
+          <h3>Reach me directly</h3>
+          <ul class="clean">
+            <li><strong>Email:</strong> <a class="link" href="mailto:jacobka1219@gmail.com">jacobka1219@gmail.com</a></li>
+            <li><strong>Phone:</strong> <a class="link" href="tel:+19547402077">(954) 740-2077</a></li>
+            <li><strong>LinkedIn:</strong> <a class="link" href="https://linkedin.com/in/jacobka1219" target="_blank" rel="noopener">linkedin.com/in/jacobka1219</a></li>
+            <li><strong>GitHub:</strong> <a class="link" href="https://github.com/ItzJacobie" target="_blank" rel="noopener">github.com/ItzJacobie</a></li>
+          </ul>
+        </div>
+
+        <form action="https://formspree.io/f/your-id" method="POST" class="contact-form">
+          <div class="form-row">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="_replyto" required>
+          </div>
+          <div class="form-row">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn">Send Message</button>
+          <p class="tiny">Form powered by Formspree. Replace <code>your-id</code> with your actual form ID.</p>
+        </form>
+      </div>
+    </div>
+  </section>
 </main>
+
 <footer class="footer">
-<div class="container footer__inner">
-<p>&copy; 2025 Jacob Adams. All rights reserved.</p>
-</div>
+  <div class="container footer__inner">
+    <div class="social">
+      <a href="https://linkedin.com/in/jacobka1219" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://github.com/ItzJacobie" target="_blank" rel="noopener">GitHub</a>
+      <a href="mailto:jacobka1219@gmail.com">Email</a>
+    </div>
+    <p>&copy; 2026 Jacob Adams. All rights reserved.</p>
+  </div>
 </footer>
 </body>
 </html>
